@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="clock_akrp">#303e53</color>
+    <color name="clock_ylkvn">#77badd</color>
+    <color name="clock_mnt">#f8c83c</color>
+
+    <color name="soft_purple">#959ffe</color>
+    <color name="soft_green">#c4f6e5</color>
+    <color name="soft_yellow">#fee698</color>
+    <color name="soft_red">#fbd6da</color>
+    <color name="soft_pink">#e4cbff</color>
+    <color name="soft_black">#020129</color>
+    <color name="soft_blocked">#706880</color>
+    <color name="soft_background">#f0f4f9</color>
+
+    <color name="live_purple">#6774f8</color>
+    <color name="live_pink">#D2AFF8</color>
+    <color name="live_red">#E33346</color>
+
+    <color name="new_light_creemy">#fffbf7</color>
+    <color name="new_creemy">#edddd1</color>
+    <color name="new_dark">#492d23</color>
+
+    <color name="transparent_purple">#40959FFE</color>
+
+    <color name="digital_clock_inner">#290808</color>
+</resources>

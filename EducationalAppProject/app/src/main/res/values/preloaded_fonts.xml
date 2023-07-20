@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/baloo</item>
+        <item>@font/coiny</item>
+        <item>@font/days_one</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/lexend_semibold</item>
+        <item>@font/lilita_one</item>
+        <item>@font/margarine</item>
+        <item>@font/paytone_one</item>
+        <item>@font/prompt_medium</item>
+        <item>@font/ramabhadra</item>
+        <item>@font/sulphur_point</item>
+        <item>@font/titan_one</item>
+    </array>
+</resources>

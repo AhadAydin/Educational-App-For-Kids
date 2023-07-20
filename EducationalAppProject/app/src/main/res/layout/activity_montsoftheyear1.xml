@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soho_background"
+    tools:context=".montsoftheyear1">
+
+    <GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="412dp"
+        android:layout_height="347dp"
+        android:columnCount="3"
+        android:rowCount="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/button_september"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:text="@string/textseptember"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_may"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:text="@string/textmay"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button_february"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:paddingLeft="8dp"
+            android:text="@string/textfebruary" />
+
+        <Button
+            android:id="@+id/button_july"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:text="@string/textjuly" />
+
+        <Button
+            android:id="@+id/button_march"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:text="@string/textmarch" />
+
+        <Button
+            android:id="@+id/button_august"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:text="@string/textaugust" />
+
+        <Button
+            android:id="@+id/button_december"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:paddingLeft="8dp"
+            android:text="@string/textdecember" />
+
+        <Button
+            android:id="@+id/button_january"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:text="@string/textJanuary" />
+
+        <Button
+            android:id="@+id/button_october"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:paddingLeft="8dp"
+            android:text="@string/textoctober" />
+
+        <Button
+            android:id="@+id/button_april"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:text="@string/textapril" />
+
+        <Button
+            android:id="@+id/button_june"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:text="@string/textjune" />
+
+        <Button
+            android:id="@+id/button_november"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onMonthButtonClick"
+            android:paddingLeft="8dp"
+            android:text="@string/textnovember" />
+
+    </GridLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:alpha="0.5"
+        android:max="50"
+        android:progress="50"
+        android:progressTint="@color/live_purple"
+        android:scaleY="5"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints,NotSibling" />
+
+    <TextView
+        android:id="@+id/puan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_semibold"
+        android:text="@string/pointtext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="6dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="348dp"
+        android:layout_height="270dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="#40000000"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar2"
+        app:layout_constraintVertical_bias="0.640"
+        app:srcCompat="@drawable/empty_drawable"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="412dp"
+        android:layout_height="329dp"
+        android:layout_marginBottom="2dp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/arrow2"
+            android:layout_width="48dp"
+            android:layout_height="29dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.664"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.143"
+            app:srcCompat="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/textJanuary"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="36dp"
+            android:background="@drawable/rounded_red"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textJanuary"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
+
+        <ImageView
+            android:id="@+id/arrow1"
+            android:layout_width="48dp"
+            android:layout_height="29dp"
+            android:layout_marginEnd="248dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textJanuary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.14"
+            app:srcCompat="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/textFebruary"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_red2"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textfebruary"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/arrow1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.139" />
+
+        <TextView
+            android:id="@+id/textMarch"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_orange1"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textmarch"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.868"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.146" />
+
+        <ImageView
+            android:id="@+id/arrow3"
+            android:layout_width="29dp"
+            android:layout_height="48dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.812"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.266"
+            app:srcCompat="@drawable/down_arrow" />
+
+        <TextView
+            android:id="@+id/textApril"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_orange2"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textapril"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.868"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.411" />
+
+        <TextView
+            android:id="@+id/textMay"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_yellow"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textmay"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.408" />
+
+        <TextView
+            android:id="@+id/textJune"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_yellow2"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textjune"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.408" />
+
+        <TextView
+            android:id="@+id/textJuly"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_green"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textjuly"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.661" />
+
+        <TextView
+            android:id="@+id/textAugust"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_green2"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textaugust"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.664" />
+
+        <TextView
+            android:id="@+id/textSeptember"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_blue"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textseptember"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.868"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.667" />
+
+        <TextView
+            android:id="@+id/textDecember"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_purple2"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textdecember"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.113"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.91" />
+
+        <TextView
+            android:id="@+id/textNovember"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_purple"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textnovember"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.91" />
+
+        <TextView
+            android:id="@+id/textOctober"
+            android:layout_width="78dp"
+            android:layout_height="28dp"
+            android:background="@drawable/rounded_blue2"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/textoctober"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.868"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.913" />
+
+        <ImageView
+            android:id="@+id/arrow6"
+            android:layout_width="31dp"
+            android:layout_height="51dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.532"
+            app:srcCompat="@drawable/down_arrow" />
+
+        <ImageView
+            android:id="@+id/arrow9"
+            android:layout_width="35dp"
+            android:layout_height="44dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.824"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.817"
+            app:srcCompat="@drawable/down_arrow" />
+
+        <ImageView
+            android:id="@+id/arrow7"
+            android:layout_width="48dp"
+            android:layout_height="29dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.318"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.663"
+            app:srcCompat="@drawable/right_arrow" />
+
+        <ImageView
+            android:id="@+id/arrow8"
+            android:layout_width="48dp"
+            android:layout_height="29dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.664"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.67"
+            app:srcCompat="@drawable/right_arrow" />
+
+        <ImageView
+            android:id="@+id/arrow5"
+            android:layout_width="48dp"
+            android:layout_height="29dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.318"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.406"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <ImageView
+            android:id="@+id/arrow4"
+            android:layout_width="48dp"
+            android:layout_height="29dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.664"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.41"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <ImageView
+            android:id="@+id/arrow11"
+            android:layout_width="48dp"
+            android:layout_height="29dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.318"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.913"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <ImageView
+            android:id="@+id/arrow10"
+            android:layout_width="48dp"
+            android:layout_height="29dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="@+id/textDecember"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.913"
+            app:srcCompat="@drawable/left_arrow" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="293dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/months_order"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.445"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.013" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

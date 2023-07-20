@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mm_background"
+    android:backgroundTint="#077A3D00"
+    android:backgroundTintMode="src_over"
+    tools:context=".MainMenu">
+
+    <TextView
+        android:id="@+id/txt_xp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/new_creemy"
+        android:fontFamily="@font/lexend_semibold"
+        android:paddingTop="16dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="16dp"
+        android:text="000000XP"
+        android:textAlignment="textEnd"
+        android:textColor="@color/new_dark"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_menu_user"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/new_light_creemy"
+        android:fontFamily="@font/lexend_semibold"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/hello_msg"
+        android:textColor="@color/new_dark"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_xp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_xp"
+        app:layout_constraintTop_toTopOf="@+id/txt_xp" />
+
+    <TextView
+        android:id="@+id/main_menu_games"
+        android:layout_width="0dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="#ECE2DB"
+        android:fontFamily="@font/lexend_semibold"
+        android:paddingLeft="16dp"
+        android:paddingTop="4dp"
+        android:text="@string/games"
+        android:textSize="46sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_xp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/main_menu_games">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#ECE2DB"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_days_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/btnimg_rinbow"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="top"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/game_days"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/clock_akrp"
+                    android:textSize="28sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_months_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/btnimg_sun"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="bottom"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/game_months"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="@color/clock_akrp"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_seasons_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/btnimg_rain"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="bottom"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/game_seasons"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/clock_akrp"
+                    android:textSize="28sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_clock_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/btnimg_cloud"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="bottom"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/game_clock"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/clock_akrp"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_directions_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="0"
+                    android:background="@drawable/btnimg_mountain"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="top"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="16dp"
+                    android:text="@string/game_directions"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/clock_akrp"
+                    android:textSize="28sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_multiplication_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@drawable/btnimg_ground"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="bottom"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="8dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/game_multiplication"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                    android:textColor="@color/clock_akrp"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_similar_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/btnimg_night_cloud"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="bottom"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/game_similar_image"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/new_dark"
+                    android:textSize="28sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_spelling_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/btnimg_moon"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="bottom"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/game_spelling"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/new_dark"
+                    android:textSize="28sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_remember_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/btnimg_sea"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="bottom"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/game_remember_digits"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/new_dark"
+                    android:textSize="28sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_backwards_remember_game"
+                    android:layout_width="174dp"
+                    android:layout_height="174dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/btnimg_stars"
+                    android:fontFamily="@font/lexend_semibold"
+                    android:gravity="bottom"
+                    android:onClick="OnGameButtonClick"
+                    android:paddingLeft="16dp"
+                    android:paddingBottom="16dp"
+                    android:text="@string/game_remember_backwards"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textColor="@color/new_dark"
+                    android:textSize="26sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ask_soho_button"
+        android:layout_width="0dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="OnAskSohoButtonClick"
+        app:cardBackgroundColor="@color/live_purple"
+        app:cardCornerRadius="38dp"
+        app:layout_constraintBottom_toTopOf="@+id/main_menu_games"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_xp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lexend_semibold"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/ask_soho"
+            android:textColor="@color/new_light_creemy"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="139dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/soho_in_box" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/soho_tutorail_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="OnAskSohoButtonClick"
+        android:visibility="invisible"
+        app:cardBackgroundColor="#F0303E53"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_xp">
+
+        <TextView
+            android:id="@+id/soho_tutorial_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginLeft="8dp"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/soho_msg_5_0"
+            android:textAlignment="textStart"
+            android:textColor="@color/new_light_creemy"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/sho_helping_img"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/soho" />
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

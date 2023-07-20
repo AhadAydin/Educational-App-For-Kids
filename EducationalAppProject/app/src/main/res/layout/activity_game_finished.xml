@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soho_background"
+    android:backgroundTint="#CB000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".GameFinished">
+
+    <Button
+        android:id="@+id/gameFin_tapScreenButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#00F32323"
+        android:onClick="gameFinTapScreen"
+        android:text="@string/cat"
+        android:textColor="#00FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/confetti"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="-64dp"
+        android:layout_marginTop="-4dp"
+        android:layout_marginEnd="-64dp"
+        android:layout_marginBottom="-4dp"
+        android:src="@drawable/confetti"
+        app:layout_constraintBottom_toBottomOf="@+id/gameFin_tapScreenButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/gameFin_cong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/soft_purple"
+        android:fontFamily="@font/lexend_semibold"
+        android:paddingLeft="12dp"
+        android:paddingTop="3dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="3dp"
+        android:text="@string/congratulations"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/soft_background"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tapScreenToGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="#A9959FFE"
+        android:fontFamily="@font/lexend_semibold"
+        android:paddingLeft="12dp"
+        android:paddingTop="4dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="4dp"
+        android:text="@string/tapScreenToGoBack"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/new_light_creemy"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gameFin_tapScreenButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:layout_constraintBottom_toTopOf="@+id/tapScreenToGoBack"
+        app:layout_constraintEnd_toEndOf="@+id/gameFin_tapScreenButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameFin_cong"
+        app:srcCompat="@drawable/ring" />
+
+    <TextView
+        android:id="@+id/gameFin_xp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_semibold"
+        android:text="xp gained"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/soft_purple"
+        android:textSize="42sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="160dp"
+        android:layout_height="275dp"
+        android:layout_marginEnd="128dp"
+        android:rotation="26"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameFin_cong"
+        app:srcCompat="@drawable/soho_happy" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

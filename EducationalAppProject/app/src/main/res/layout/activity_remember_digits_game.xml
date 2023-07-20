@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soho_background"
+    tools:context=".RememberDigitsGame">
+
+    <ProgressBar
+        android:id="@+id/remember_digits_enerygBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:progressTint="@color/live_purple"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rememberDigits_imageView"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="#40000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remember_digits_msg"
+        tools:srcCompat="@drawable/soho_cruious" />
+
+    <TextView
+        android:id="@+id/enteredDigits_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="#40000000"
+        android:fontFamily="@font/lexend_semibold"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rememberDigits_imageView" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enteredDigits_text">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_digit1"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button20dp"
+                android:backgroundTint="@color/new_light_creemy"
+                android:fontFamily="@font/lexend_semibold"
+                android:onClick="onDigitButtonClick"
+                android:text="1"
+                android:textColor="@color/new_dark"
+                android:textSize="42sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_digit2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button20dp"
+                android:backgroundTint="@color/new_light_creemy"
+                android:fontFamily="@font/lexend_semibold"
+                android:onClick="onDigitButtonClick"
+                android:text="2"
+                android:textColor="@color/new_dark"
+                android:textSize="42sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_digit3"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button20dp"
+                android:backgroundTint="@color/new_light_creemy"
+                android:fontFamily="@font/lexend_semibold"
+                android:onClick="onDigitButtonClick"
+                android:text="3"
+                android:textColor="@color/new_dark"
+                android:textSize="42sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_digit4"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button20dp"
+                android:backgroundTint="@color/new_light_creemy"
+                android:fontFamily="@font/lexend_semibold"
+                android:onClick="onDigitButtonClick"
+                android:text="4"
+                android:textColor="@color/new_dark"
+                android:textSize="42sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_digit5"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button20dp"
+                android:backgroundTint="@color/new_light_creemy"
+                android:fontFamily="@font/lexend_semibold"
+                android:onClick="onDigitButtonClick"
+                android:text="5"
+                android:textColor="@color/new_dark"
+                android:textSize="42sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_digit6"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button20dp"
+                android:backgroundTint="@color/new_light_creemy"
+                android:fontFamily="@font/lexend_semibold"
+                android:onClick="onDigitButtonClick"
+                android:text="6"
+                android:textColor="@color/new_dark"
+                android:textSize="42sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_digit7"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button20dp"
+                android:backgroundTint="@color/new_light_creemy"
+                android:fontFamily="@font/lexend_semibold"
+                android:onClick="onDigitButtonClick"
+                android:text="7"
+                android:textColor="@color/new_dark"
+                android:textSize="42sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_digit8"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button20dp"
+                android:backgroundTint="@color/new_light_creemy"
+                android:fontFamily="@font/lexend_semibold"
+                android:onClick="onDigitButtonClick"
+                android:text="8"
+                android:textColor="@color/new_dark"
+                android:textSize="42sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_digit9"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/button20dp"
+                android:backgroundTint="@color/new_light_creemy"
+                android:fontFamily="@font/lexend_semibold"
+                android:onClick="onDigitButtonClick"
+                android:text="9"
+                android:textColor="@color/new_dark"
+                android:textSize="42sp" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_digit0"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="@color/new_light_creemy"
+            android:fontFamily="@font/lexend_semibold"
+            android:onClick="onDigitButtonClick"
+            android:text="0"
+            android:textColor="@color/new_dark"
+            android:textSize="42sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/remember_digits_msg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/new_light_creemy"
+        android:fontFamily="@font/lexend_semibold"
+        android:text="@string/remember_digits_info"
+        android:textAlignment="center"
+        android:textColor="@color/new_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/remember_digits_enerygBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

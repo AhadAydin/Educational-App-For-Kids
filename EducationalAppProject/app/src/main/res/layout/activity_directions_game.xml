@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/soho_background"
+    tools:context=".DirectionsGame">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_front"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/soft_background"
+        android:fontFamily="@font/lexend_semibold"
+        android:onClick="OnDirButtonPressed"
+        android:text="@string/label_front"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/soft_black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_behind"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/soft_background"
+        android:fontFamily="@font/lexend_semibold"
+        android:onClick="OnDirButtonPressed"
+        android:text="@string/label_behind"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/soft_black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_left"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/soft_background"
+        android:fontFamily="@font/lexend_semibold"
+        android:onClick="OnDirButtonPressed"
+        android:text="@string/label_left"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/soft_black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_right"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="116dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/soft_background"
+        android:fontFamily="@font/lexend_semibold"
+        android:onClick="OnDirButtonPressed"
+        android:text="@string/label_right"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/soft_black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_up"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/soft_background"
+        android:fontFamily="@font/lexend_semibold"
+        android:onClick="OnDirButtonPressed"
+        android:text="@string/label_up"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/soft_black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_down"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="188dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/soft_background"
+        android:fontFamily="@font/lexend_semibold"
+        android:onClick="OnDirButtonPressed"
+        android:text="@string/label_down"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/soft_black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/direction_img"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="#5607145E"
+        app:layout_constraintBottom_toTopOf="@+id/button_up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/arrow_behind" />
+
+    <TextView
+        android:id="@+id/txt_direction_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="@color/new_light_creemy"
+        android:contentDescription="@string/img_background"
+        android:fontFamily="@font/lexend_semibold"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:text="@string/directions_game_message"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/energy_bar" />
+
+    <ProgressBar
+        android:id="@+id/energy_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="350dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="40dp"
+        android:progressTint="@color/live_purple"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

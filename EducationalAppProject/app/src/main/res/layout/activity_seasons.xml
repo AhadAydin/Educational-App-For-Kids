@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".seasons">
+
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="221dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/springbutton"
+            android:layout_width="120dp"
+            android:layout_height="84dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/spring" />
+
+        <Button
+            android:id="@+id/summerbutton"
+            android:layout_width="120dp"
+            android:layout_height="84dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_marginLeft="86dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/summer" />
+
+        <Button
+            android:id="@+id/fallbutton"
+            android:layout_width="120dp"
+            android:layout_height="84dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_marginLeft="86dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/fall" />
+
+        <Button
+            android:id="@+id/winterbutton"
+            android:layout_width="120dp"
+            android:layout_height="84dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="26dp"
+            android:background="@drawable/button20dp"
+            android:backgroundTint="#F6F2FA"
+            android:fontFamily="@font/lexend_semibold"
+            android:text="@string/winter" />
+    </GridLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="322dp"
+        android:layout_height="40dp"
+        android:alpha="1"
+        android:max="50"
+        android:progress="50"
+        android:progressTint="@color/live_purple"
+        android:scaleY="5"
+        app:layout_constraintBottom_toTopOf="@+id/seasonimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pointsTextView"
+        android:layout_width="106dp"
+        android:layout_height="53dp"
+        android:layout_marginEnd="280dp"
+        android:fontFamily="@font/lexend_semibold"
+        android:text="@string/pointtext"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="293dp"
+        android:layout_height="30dp"
+        android:background="@drawable/button20dp"
+        android:backgroundTint="#F6F2FA"
+        android:fontFamily="@font/lexend_semibold"
+        android:text="@string/trueorfalse"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="366dp"
+        android:layout_height="230dp"
+        app:layout_constraintBottom_toBottomOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421"
+        app:srcCompat="@drawable/button20dp"
+        app:tint="#40000000"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/seasonimage"
+        android:layout_width="321dp"
+        android:layout_height="188dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>

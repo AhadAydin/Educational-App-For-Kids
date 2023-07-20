@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "390995008385",
+    "project_id": "game-2980a",
+    "storage_bucket": "game-2980a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390995008385:android:8fa931c81ae0a02fe42680",
+        "android_client_info": {
+          "package_name": "com.example.gameproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBboVjsPGEZO3eypTJ4v52jASjqaC4uDQw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

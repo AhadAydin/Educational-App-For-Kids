@@ -5,9 +5,9 @@ This Android Studio project is a learning app designed for children aged 7-10. T
 ## Features
 
 - **Login and Sign-up:** The app allows users to log in with their credentials or sign up for a new account using Firebase authentication.
-
+  ![Login Screen](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss0.png)
 - **Main Menu:** Upon successful login, children are taken to the main menu, which displays a top bar showing the current XP and username of the user.
-- ![Main Menu](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss0.png)
+  ![Main Menu](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss1.png)
 
 - **Virtual Assistant (Soho):** The main menu features a "Tutorial" button that, when clicked, provides an explanation of the app. This feature is powered by Soho, the virtual assistant, to guide children through the app.
 
@@ -17,11 +17,14 @@ This Android Studio project is a learning app designed for children aged 7-10. T
   3. Learn Clocks
   4. Learn Seasons
   5. Learn Directions
+     ![Learn Directions](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss2.png)
   6. Learn Multiplication
   7. Learn Spelling
+      ![Learn Directions](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss3.png)
   8. Remember Digits
   9. Remember Digits Backward
   10. Find Similar Images
+      ![Learn Directions](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss4.png)
 
 - **Gameplay:** Children can click on any of the game buttons to play the corresponding educational game. These games are designed to help children learn and reinforce essential skills in an interactive and engaging manner.
 
@@ -36,10 +39,6 @@ This Android Studio project is a learning app designed for children aged 7-10. T
 ## Dependencies
 
 This Android Studio project uses Firebase for user authentication. Ensure that you have the necessary Firebase setup before running the app.
-
-## Contributions
-
-Contributions to this project are welcome. If you have any suggestions, bug reports, or improvements, feel free to open an issue or submit a pull request on the GitHub repository.
 
 ## License
 

@@ -1,4 +1,4 @@
-# Learning App for children
+# Learning App for Kids
 
 This Android Studio project is a learning app designed for children aged 7-10. The app features a login and sign-up screen powered by Firebase for user authentication. Once logged in, children are taken to the main menu, where they can access various educational games and features.
 
@@ -7,7 +7,7 @@ This Android Studio project is a learning app designed for children aged 7-10. T
 - **Login and Sign-up:** The app allows users to log in with their credentials or sign up for a new account using Firebase authentication.
 
 - **Main Menu:** Upon successful login, children are taken to the main menu, which displays a top bar showing the current XP and username of the user.
-- ![Main Menu](./images/main_menu.png)
+- ![Main Menu]([./images/main_menu.png](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss0.png))
 
 - **Virtual Assistant (Soho):** The main menu features a "Tutorial" button that, when clicked, provides an explanation of the app. This feature is powered by Soho, the virtual assistant, to guide children through the app.
 

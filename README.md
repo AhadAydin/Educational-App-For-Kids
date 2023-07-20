@@ -19,14 +19,14 @@ This Android Studio project is a learning app designed for children aged 7-10. T
   3. Learn Clocks
   4. Learn Seasons
   5. Learn Directions
-![Learn Directions](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss2.png)
+<img src="https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss2.png" width="200" alt="Main Menu">
   6. Learn Multiplication
   7. Learn Spelling
-![Learn Directions](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss3.png)
+<img src="https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss3.png" width="200" alt="Main Menu">
   8. Remember Digits
   9. Remember Digits Backward
   10. Find Similar Images
-![Learn Directions](https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss4.png)
+<img src="https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss4.png" width="200" alt="Main Menu">
 
 - **Gameplay:** Children can click on any of the game buttons to play the corresponding educational game. These games are designed to help children learn and reinforce essential skills in an interactive and engaging manner.
 

@@ -21,7 +21,7 @@ This Android Studio project is a learning app designed for children aged 7-10. T
   3. Learn Clocks
    
   4. Learn Seasons
-  
+
   5. Learn Directions
 <img src="https://github.com/AhadAydin/Educational-App-For-Kids/blob/main/Screenshots/ss2.png" width="200" alt="Main Menu">
 
